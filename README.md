@@ -1,29 +1,27 @@
 # contactFileParserAndViewer
-- Allows the user to upload, store, view, edit and create a vCard, also known as VCF (Virtual Contact File).
+- Allows the user to **upload**, **download**, **store**, **view**, **edit** and **create** a vCard, also known as VCF (Virtual Contact File).
 - This project was part of the CIS 2750 course (Software Systems Development and Integration) at University of Guelph's Software Engineering Program. 
 - This course is considered to be the hardest course in the program.
 - Recieved a score of a **100%** in the course
 
 ## Features
-### Allows the user to **Upload** a vCard
+#### Allows the user to **Upload** a vCard
 <a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="upload"/></a>
 
-### Allows the user to **View** a vCard
-<br>
+#### Allows the user to **View** a vCard
 <a href="https://media.giphy.com/media/OI245OItFLT2pjczDl/giphy.gif"><img src="https://media.giphy.com/media/OI245OItFLT2pjczDl/giphy.gif" title="view"/></a>
 
-### Allows the user to **Add** a property to a vCard
-<br>
+#### Allows the user to **Add** a property to a vCard
 <a href="https://media.giphy.com/media/V7AHUgM5pzz38x09xy/giphy.gif"><img src="https://media.giphy.com/media/V7AHUgM5pzz38x09xy/giphy.gif" title="Add"/></a>
 
-### Allows the user to **Edit** a property value
-<br>
+#### Allows the user to **Edit** a property value
 <a href="https://media.giphy.com/media/jFBsJqBw58CBVQKTe9/giphy.gif"><img src="https://media.giphy.com/media/jFBsJqBw58CBVQKTe9/giphy.gif" title="Edit"/></a>
 
-### Allows the user to **Create** a new vCard
-<br>
+#### Allows the user to **Create** a new vCard
 <a href="https://media.giphy.com/media/UVbB5zzE8kE56CyaoU/giphy.gif"><img src="https://media.giphy.com/media/UVbB5zzE8kE56CyaoU/giphy.gif" title="Create"/></a>
 
+#### Download a vCard
+<a href="https://media.giphy.com/media/GPdgQ6luDerrQPsfUu/giphy.gif"><img src="https://media.giphy.com/media/GPdgQ6luDerrQPsfUu/giphy.gif" title="Download"/></a>
 
 ## Technology Used
 - C
