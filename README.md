@@ -10,12 +10,21 @@
 <a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="upload"/></a>
 
 - Allows the user to **View** a vCard
+<br>
+<a href="https://media.giphy.com/media/OI245OItFLT2pjczDl/giphy.gif"><img src="https://media.giphy.com/media/OI245OItFLT2pjczDl/giphy.gif" title="view"/></a>
 
 - Allows the user to **Add** a property to a vCard
+<br>
+<a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="Add"/></a>
 
 - Allows the user to **Edit** a property value
+<br>
+<a href="https://media.giphy.com/media/jFBsJqBw58CBVQKTe9/giphy.gif"><img src="https://media.giphy.com/media/jFBsJqBw58CBVQKTe9/giphy.gif" title="Edit"/></a>
 
 - Allows the user to **Create** a new vCard
+<br>
+<a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="Create"/></a>
+
 
 ## Technology Used
 - C
