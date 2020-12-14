@@ -2,7 +2,7 @@
 - Allows the user to upload, store, view, edit and create a vCard, also known as VCF (Virtual Contact File).
 - This project was part of the CIS 2750 course (Software Systems Development and Integration) at University of Guelph's Software Engineering Program. 
 - This course is considered to be the hardest course in the program.
-- Recieved a score of a 100% in the course
+- Recieved a score of a **100%** in the course
 
 ## Features
 - Allows the user to **Upload** a vCard
@@ -15,7 +15,7 @@
 
 - Allows the user to **Add** a property to a vCard
 <br>
-<a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="Add"/></a>
+<a href="https://media.giphy.com/media/V7AHUgM5pzz38x09xy/giphy.gif"><img src="https://media.giphy.com/media/V7AHUgM5pzz38x09xy/giphy.gif" title="Add"/></a>
 
 - Allows the user to **Edit** a property value
 <br>
