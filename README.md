@@ -1,2 +1,30 @@
 # contactFileParserAndViewer
-Allows the user to upload, view, edit and create a vCard, also known as VCF (Virtual Contact File).
+- Allows the user to upload, store, view, edit and create a vCard, also known as VCF (Virtual Contact File).
+- This project was part of the CIS 2750 course (Software Systems Development and Integration) at University of Guelph's Software Engineering Program. 
+- This course is considered to be the hardest course in the program.
+- Recieved a score of a 100% in the course
+
+## Features
+- Allows the user to **Upload** a vCard
+
+- Allows the user to **View** a vCard
+
+- Allows the user to **Add** a property to a vCard
+
+- Allows the user to **Edit** a property value
+
+- Allows the user to **Create** a new vCard
+
+## Technology Used
+- C
+- HTML
+- CSS
+- JavaScript
+- Makefile
+
+## Install
+- Install Node modules: npm install
+
+## Notes
+- The backend of the project contains a vCard parser library which is written in C (folder: parser)
+- The web portion of the project uses HTML, CSS, JavaScript and AJAX to allow the user to upload, view, add, edit, create vCards. (folder: public, app.js)
