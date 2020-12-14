@@ -6,6 +6,7 @@
 
 ## Features
 - Allows the user to **Upload** a vCard
+<br>
 <a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="upload"/></a>
 
 - Allows the user to **View** a vCard
