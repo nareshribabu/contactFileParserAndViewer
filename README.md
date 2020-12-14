@@ -1,12 +1,14 @@
 # contactFileParserAndViewer
 - Allows the user to **upload**, **download**, **store**, **view**, **edit** and **create** a vCard, also known as VCF (Virtual Contact File).
 - This project was part of the CIS 2750 course (Software Systems Development and Integration) at University of Guelph's Software Engineering Program. 
-- This course is considered to be the hardest course in the program.
+- This course is considered to be the **hardest** course in the program.
 - Recieved a score of a **100%** in the course
 
 ## Features
 #### Allows the user to **Upload** a vCard
+<kbd>
 <a href="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif"><img src="https://media.giphy.com/media/78dIxZuadvZrOdwTdY/giphy.gif" title="upload"/></a>
+</kbd>
 
 #### Allows the user to **View** a vCard
 <a href="https://media.giphy.com/media/OI245OItFLT2pjczDl/giphy.gif"><img src="https://media.giphy.com/media/OI245OItFLT2pjczDl/giphy.gif" title="view"/></a>
