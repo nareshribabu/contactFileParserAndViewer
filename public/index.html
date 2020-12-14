@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>vCard Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CHANGE ME">
+    <meta name="keywords" content="CHANGE ME">
+    <meta name="author" content="CHANGE ME">
+    <!-- Load jquery, bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Custom CSS End -->
+</head>
+
+<body>
+    <h3>vCard Viewer</h3>
+    <!-- If the A3 stub is running and rects.svg exists in the uploads/ directory on the server, then clicking on the link
+    below will download it from the server.<br> -->
+    <hr>
+
+    <!-- File Log -->
+    <h4 id="filelogTitle">File Log</h4>
+    <hr>
+
+    <!-- Table 1: File Log -->
+    <div id="fileLogDiv">
+        <table id="fileLogTable" class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <td>File Name (Click to download)</td>
+                    <td>Individual's Name</td>
+                    <td>Additional Properties</td>
+                </tr>
+            </thead>
+            <tbody id="fileLogTableBody">
+                <!-- Gets Generated automatically depending on the uploads folder -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Upload button -->
+    <h6 id="uploadErrorMessage"></h6>
+
+    <form ref='uploadForm' id='uploadForm' action='/upload' method='post' encType="multipart/form-data">
+        <div class="form-group">
+            <input type="file" name="uploadFile" class="btn btn-secondary" id="uploadFile">
+            <input type='submit' value='Upload' class="btn btn-secondary" id="uploadButton">
+        </div>
+    </form>
+
+
+    <!-- Card View -->
+    <hr>
+    <h4 id="cardViewTitle">Card View</h4>
+    <hr>
+
+    <!-- Dropdown Button -->
+    <div class="dropdown">
+
+        <select name="dropDownList" id="dropDownlistFileNames">
+            <option value="0"></option>
+        </select>
+
+
+    </div>
+
+
+    <!-- Table 2: Card View -->
+    <div id="CardViewDiv">
+
+        <table id="CardViewTable" class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <td>Property #</td>
+                    <td>Name</td>
+                    <td>Values</td>
+                    <td>Parameters</td>
+                </tr>
+            </thead>
+
+            <tbody id="CardViewBody">
+                <tr>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Edit A Single Property Value -->
+    <div id="editPropertyValue">
+        <br>
+        <h5><u>Update a Single Property Value</u></h5>
+        <label> Enter a property number corresponding to the property value you want to change from the table above and
+            the
+            new property value.
+        </label>
+        <br>
+        <form id="editPropValue">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputPropNumber">Property Number</label>
+                    <input type="text" class="form-control" id="inputPropNumber" placeholder="Property Number">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPropVal">New Property Value</label>
+                    <input type="text" class="form-control" id="inputPropVal" placeholder="New Property Value">
+                </div>
+            </div>
+            <h6 id="errorForEditPropVal"></h6>
+            <button type="button" id="editPropValCardViewButton" class="btn btn-outline-dark">Update</button>
+            <!-- changed type to button was submit -->
+
+        </form>
+    </div>
+
+
+    <!-- Add a property to the currently selected card -->
+    <div id="addProperty">
+        <br>
+        <h5><u>Add A Property</u></h5>
+        <label>Fill in the form below and click add property button to add a new property to the card.
+        </label>
+        <form id="addProp">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputPropName">Name</label>
+                    <input type="text" class="form-control" id="inputPropName" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPropGroup">Group</label>
+                    <input type="text" class="form-control" id="inputPropGroup" placeholder="Group">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPropValue">Value</label>
+                <input type="text" class="form-control" id="inputPropValue" placeholder="Value">
+            </div>
+
+            <h6 id="errorForAddProp"></h6>
+            <button type="button" id="addPropCardViewButton" class="btn btn-outline-dark"> Add Property </button>
+
+        </form>
+    </div>
+
+
+
+    <!-- Create a vCard  -->
+    <hr>
+    <h4>Create a vCard</h4>
+    <hr>
+
+    <!-- Create Card Form -->
+    <div>
+        <form>
+
+            <!-- File Name -->
+            <h5><u>File Name (Required)</u></h5>
+            <label>Please include the correct file extension (.vcf or .vcard) </label>
+            <div class="form-group">
+                <label for="inputFilename">Filename</label>
+                <input type="text" class="form-control" id="inputFilename" placeholder="Filename">
+            </div>
+
+            <!-- FN -->
+            <h5><u>FN (Required)</u></h5>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFN">Name</label>
+                    <input type="text" class="form-control" id="inputFN" placeholder="FN name" value="FN" readonly>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputFNValue">Value</label>
+                    <input type="text" class="form-control" id="inputFNValue" placeholder="FN Value">
+                </div>
+            </div>
+
+
+            <label id="errorMessageForCreateCard"></label>
+            <br>
+            <button type="button" id="submitCreateCard" class="btn btn-outline-dark">Create Card</button>
+
+        </form>
+
+    </div>
+
+
+
+    <footer>
+        <br>
+        <br>
+        <br>
+    </footer>
+
+
+
+    <!-- Leave me at the bottom of body -->
+    <script src="/index.js"></script>
+</body>
+
+</html>
+
+<!-- November 24 -->

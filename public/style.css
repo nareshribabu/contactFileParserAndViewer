@@ -1,0 +1,135 @@
+html {
+    width: 60%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #FFFFFF;
+}
+body {
+    height: 100%;
+    min-height: 100%;
+    line-height: 1.75;
+    background-color: #FFFFFF;
+}
+
+/* headings */
+h3 {
+
+    text-align: center;
+}
+
+/* File Log Table */
+#fileLogTable {
+   
+    text-align: center;
+    table-layout: auto;
+    width: 100%;
+}
+
+#fileLogDiv {
+    overflow: scroll;
+}
+
+/* Adds vertical scrolling after 5 rows */
+.add-scroll {
+    overflow-y: scroll;
+    height: 53%;
+
+}
+
+#dropDownlistFileNames {
+    width: 200px;
+}
+
+#CardViewTable {
+    text-align: center;
+    table-layout: auto;
+    width: 100%;
+    height: auto;
+}
+
+#CardViewDiv {
+    overflow: scroll;
+}
+
+/* Update Value Column */
+#editPropertyValue {
+    display: none;
+    border-radius: 25px;
+    border: 2px solid #DCDCDC;
+    padding: 20px;
+}
+
+#errorForEditPropVal {
+    color: red;
+    /* display: none; */
+}
+
+.form-control {
+    text-align: center;
+    width: 100%;
+}
+
+
+.popover-body {
+    max-width: none;
+    white-space: pre-wrap; 
+}
+
+/* Add a property */
+#addProperty {
+    display: none;
+    border-radius: 25px;
+    border: 2px solid #DCDCDC;
+    padding: 20px;
+}
+
+#errorForAddProp {
+    color: red; 
+}
+
+/* Create a new VCard */
+#errorMessageForCreateCard {
+    color: red;
+}
+
+/* Upload New File */
+#uploadErrorMessage {
+    color: red;
+}
+
+/* other */
+
+a:link:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+}
+input[type=submit], button {
+    cursor: pointer;
+    cursor: hand;
+}
+@media(max-width: 900px) {
+    html {
+        font-size: 14px !important;
+        width: 80% !important;
+    }
+}
+@media(max-width: 480px) {
+    html {
+        font-size: 12px !important;
+        width: 90% !important;
+    }
+}
+@media(max-width: 320px) {
+    html {
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+}
+
+/* November 24 */
